@@ -6,17 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, ArrowRight, Check, HelpCircle } from "lucide-react";
 import TemplateStep from "@/components/template-step";
-
-interface TemplateAnswers {
-  date: string;
-  goal: string;
-  feelings: string;
-  challenges: string;
-  changes: string;
-  description: string;
-  sentence: string;
-  [key: string]: string; // 인덱스 시그니처 추가
-}
+import { TemplateAnswers } from "@/types";
 
 interface Step {
   title: string;

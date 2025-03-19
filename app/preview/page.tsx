@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Home, Share2 } from "lucide-react";
+import { TemplateAnswers } from "@/types";
 
 export default function PreviewPage() {
   const router = useRouter();
@@ -31,7 +32,7 @@ export default function PreviewPage() {
     setLoading(false);
   }, [source]);
 
-  const formatTemplateJournal = (answers: any) => {
+  const formatTemplateJournal = (answers: TemplateAnswers) => {
     return `# ${answers.date}의 미리보기
 ${answers.goal}
 ${answers.feelings}
